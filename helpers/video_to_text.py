@@ -2,6 +2,8 @@ import os
 import subprocess
 import whisper
 
+GEMINI_API_KEY = "AIzaSyBdyWaRhXjfbIL7i3_c4H0Y_J3oCHrG5wI"
+
 # Function to convert video to audio and transcribe it
 def video_to_text(video_file, audio_output_dir, model_name="base"):
     base_name = os.path.splitext(os.path.basename(video_file))[0]
