@@ -2,8 +2,7 @@ import requests
 import json
 import os
 
-# You should set your API key as an environment variable for security
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = "AIzaSyBdyWaRhXjfbIL7i3_c4H0Y_J3oCHrG5wI"
 
 def get_project_name_from_transcript(transcript):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
